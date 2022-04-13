@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Office</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <button id="music" class="musicOff">&#x266B;</button>
+        <audio src="audio/the-office-theme-song.mp3" loop preload="true"></audio> <!--Bron: https://www.youtube.com/watch?v=b9GilKnpiv0&ab_channel=JackedJoesJackedJoes-->
+
+        <div id="startPage">
+            <p id="intro">You are Jim, a paper salesman working at Dunder Mifflin Paper Company. This is your office. While you're hard at work selling paper
+            your boss Michael Scott walks over to you and asks you to join him in his office. It is time for you performance review. You have one
+            simple goal: Do not get fired! However, maybe you can even turn the conversation around and walk away with a pay raise? Good luck!
+            </p>
+            <div class="centered">
+            <button class="playGame">Play</button> 
+            </div>
+        </div>
+
+        <div id="gamePageOne" class="hidden">
+            <div >
+                <div id="bar" class="centered">
+                <progress id="mood" value="50" max="100"></progress> <br>	
+                <label for="mood">Boss happiness</label>
+                </div>
+            </div>
+            <div id="answers">
+                <button id="good" class="answerButtons">Sure boss, what's up?</button>
+                <button id="okay" class="answerButtons">Is that really necessary? It won't take very long right?</button>
+                <button id="bad" class="answerButtons">I prefer to stand, blothcloths you know.</button>
+            </div>
+            <div class="centered">
+            <p id="bossText">[MICHAEL] Hey Jimbo, thanks for wanting to talk. Why don't you go ahead and take a seat.</p>
+            </div>
+        </div>
+        <div id="gameFinished" class="hidden">
+            <p id="endText" class="centered"> You got yourself a pay raise! Congratulations! <br>
+            Have you found all the secrets? Play again to try and find all the easter eggs!
+            </p>
+            <div class="centered">
+                <button id="restart" class="playGame">Play Again</button>
+            </div>
+        </div>
+        <script src="js/eind.js"></script>
+    </main>    
+</body>
+</html>
